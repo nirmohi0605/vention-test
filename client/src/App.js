@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>Init</h1>
+      <h1 className="header">Init</h1>
     </div>
   );
 }

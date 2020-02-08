@@ -5,7 +5,10 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-const Flower = require('./models/Flower');
+// const Flower = require('./models/Flower');
+
+const flowers = require('./routes/api/flowers');
+
 
 app.use(
   bodyParser.urlencoded({
@@ -25,6 +28,8 @@ mongoose
 app.get('/', (req, res) => {
     res.send('Hi I am a server and I have been setup')
 })
+
+app.use("/api", flowers);
 
 // const blueFlower = new Flower({ name: 'Blue Flower', 
 // imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047071/Vention/blue-flower_ibrc8n.png',
