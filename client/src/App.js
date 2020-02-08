@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="header">Init</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Home />
+      </div>
+    </BrowserRouter>
   );
 }
 
