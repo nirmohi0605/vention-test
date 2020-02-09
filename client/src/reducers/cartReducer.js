@@ -1,5 +1,4 @@
 
-
 const initState = {
     addedItems: [],
     total: 0

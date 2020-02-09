@@ -42,6 +42,28 @@ app.use("/api", flowers);
 //   console.log(`${flower.name} saved to collection`);
 // });
 
+// const pinkFlower = new Flower({ name: 'Pink Flower', 
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047062/Vention/pink-flower_tdevsf.png',
+// price: 4000,
+// rating: 5 });
+
+// // Save the new model instance, passing a callback
+// pinkFlower.save(function (err, flower) {
+//   if (err) return handleError(err);
+//   console.log(`${flower.name} saved to collection`);
+// });
+
+// const orangeFlower = new Flower({ name: 'Orange Flower', 
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047065/Vention/orange-flower_g3ahxd.png',
+// price: 1760,
+// rating: 3 });
+
+// // Save the new model instance, passing a callback
+// orangeFlower.save(function (err, flower) {
+//   if (err) return handleError(err);
+//   console.log(`${flower.name} saved to collection`);
+// });
+
 const port = process.env.PORT || 5000;
 
 const server = app.listen(port, () => console.log(chalk.bgGreenBright(`Server up and running on port ${port}`)));

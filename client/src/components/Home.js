@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
+import Card from './Card';
 
 class Home extends Component {
  
@@ -14,7 +15,7 @@ class Home extends Component {
         <h3>Home of the flowers</h3>
         { this.props.products.map( product => {
             return (
-                <h1>{product.name}</h1>
+                <Card key={product._id} name={product.name} imageURL={product.imageURL} rating={product.rating} />
             )
         })}
       </div>
@@ -23,7 +24,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-  products: state.products
+  products: state.products.products
 });
 
 export default connect(mapStateToProps, { fetchProducts })(Home);

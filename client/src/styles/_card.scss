@@ -1,1 +1,12 @@
-@import './variables.scss'
+@import './variables.scss';
+
+
+.card-container {
+    border: 1px solid black;
+    width: 150px
+}
+
+.card-img > img{
+    width: 100px;
+    height: 100px;
+}
