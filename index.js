@@ -64,20 +64,20 @@ app.use("/api", flowers);
 //   console.log(`${flower.name} saved to collection`);
 // });
 // const violetFlower = new Flower({ name: 'Violet Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581274716/Vention/Vention_purple-flower_ouuawb-e_bgremoval_hnaase.jpg',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365937/Vention/Vention_Vention_purple-flower_ouuawb-e_bgremoval_hnaase-c_scale_h_500_w_500_bzg70x.jpg',
 // price: 2090,
 // rating: 2 });
 
-// // Save the new model instance, passing a callback
+// Save the new model instance, passing a callback
 // violetFlower.save(function (err, flower) {
 //   if (err) return handleError(err);
 //   console.log(`${flower.name} saved to collection`);
 // });
 
 // const redFlower = new Flower({ name: 'Red Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581274461/Vention/Vention_red-flower_arevam-e_make_transparent_10_jhgdmx.jpg',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365669/Vention/Vention_Vention_red-flower_arevam-e_make_transparent_10_jhgdmx-c_scale_h_500_w_500_bxpc0q.jpg',
 // price: 9800,
-// rating: 4 });
+// rating: 1 });
 
 // // Save the new model instance, passing a callback
 // redFlower.save(function (err, flower) {
@@ -86,7 +86,7 @@ app.use("/api", flowers);
 // });
 
 // const yellowFlower = new Flower({ name: 'Yellow Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581275077/Vention/Vention_yellow-flower_wfequz-c_scale_e_bgremoval_w_860_vfkh9j.png',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365570/Vention/Vention_yellow-flower2_svxyu4-c_scale_e_make_transparent_10_h_500_w_500_qhsvvh.jpg',
 // price: 9000,
 // rating: 5 });
 
@@ -98,7 +98,7 @@ app.use("/api", flowers);
 
 
 // const whiteFlower = new Flower({ name: 'White Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581274625/Vention/Vention_white_flower_nenga5-e_bgremoval_bxoygk.jpg',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365791/Vention/Vention_Vention_white_flower_nenga5-e_bgremoval_bxoygk-c_scale_h_500_w_500_bqwpmo.jpg',
 // price: 2350,
 // rating: 2 });
 
@@ -109,7 +109,7 @@ app.use("/api", flowers);
 // });
 
 // const peachFlower = new Flower({ name: 'Peach Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581273056/Vention/peach-flower_kg3ft7.png',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365207/Vention/Vention_peach-flower_sgcqwj-c_scale_e_make_transparent_10_h_500_w_500_eof0nz.jpg',
 // price: 8050,
 // rating: 5 });
 
@@ -120,7 +120,7 @@ app.use("/api", flowers);
 // });
 
 // const taffyFlower = new Flower({ name: 'Taffy Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581274319/Vention/Vention_taffy-flower_zxcwsu-e_make_transparent_10_wkr0yb.jpg',
+// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581364697/Vention/Vention_Vention_taffy-flower_zxcwsu-e_make_transparent_10_wkr0yb-c_scale_h_500_w_500_vgxgz2.jpg',
 // price: 7050,
 // rating: 5 });
 
