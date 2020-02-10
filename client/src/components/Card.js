@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Rating from "./Rating";
 import { connect } from "react-redux";
 import { formatPrice } from '../helpers';
+import { addToCart, removeFromCart } from '../actions/cartActions';
 
 class Card extends Component {
   constructor(props) {
@@ -13,9 +14,15 @@ class Card extends Component {
   }
 
   handleCartToggle = () => {
+    if(!this.state.inCart) {
+      this.props.addToCart(this.props.product);
+    } else {
+      this.props.removeFromCart(this.props.product);
+    }
     this.setState(prevState => ({
       inCart: !prevState.inCart
     }));
+
   };
 
   displayCartButtonText = () => {
@@ -32,7 +39,7 @@ class Card extends Component {
             </div>
           )}
           <div className="card-img">
-            <img src={this.props.imageURL} alt={this.props.name} />
+            <img src={this.props.product.imageURL} alt={this.props.product.name} />
           </div>
           <div className="button-container">
             <button className="cart-button" onClick={this.handleCartToggle}>
@@ -42,13 +49,17 @@ class Card extends Component {
         </div>
         <div className="divider"></div>
         <div className="card-description">
-          <p className="card-title">{this.props.name}</p>
-          <p className="price">{formatPrice(this.props.price)}</p>
-          <Rating rating={this.props.rating} />
+          <p className="card-title">{this.props.product.name}</p>
+          <p className="price">{formatPrice(this.props.product.price)}</p>
+          <Rating rating={this.props.product.rating} />
         </div>
       </div>
     );
   }
 }
 
-export default connect()(Card);
+const mapStateToProps = state => ({
+    addedItems: state.cart.addedItems,
+    total: state.cart.total  
+})
+export default connect(mapStateToProps, { addToCart, removeFromCart })(Card);

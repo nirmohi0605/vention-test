@@ -14,7 +14,7 @@ class Home extends Component {
       <div className="card-container">
         { this.props.products.map( product => {
             return (
-                <Card key={product._id} name={product.name} price={product.price} imageURL={product.imageURL} rating={product.rating} />
+                <Card key={product._id} product={product}/>
             )
         })}
       </div>
