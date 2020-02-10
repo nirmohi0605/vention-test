@@ -11,11 +11,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h3>Home of the flowers</h3>
+      <div className="card-container">
         { this.props.products.map( product => {
             return (
-                <Card key={product._id} name={product.name} imageURL={product.imageURL} rating={product.rating} />
+                <Card key={product._id} name={product.name} price={product.price} imageURL={product.imageURL} rating={product.rating} />
             )
         })}
       </div>
