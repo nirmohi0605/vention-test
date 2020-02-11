@@ -1,5 +1,7 @@
 import React from 'react';
 import { formatPrice } from '../helpers';
+import PropTypes from 'prop-types';
+
 
 const CartItem = (props) => {
     return (
@@ -10,5 +12,12 @@ const CartItem = (props) => {
         </div>
     )
 }
+
+CartItem.propTypes = {
+    item: PropTypes.object
+}
+
+
+
 
 export default CartItem;

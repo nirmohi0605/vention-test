@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 const Rating = (props) => {
@@ -15,5 +16,9 @@ const Rating = (props) => {
     )
 }
 
+
+Rating.propTypes = {
+    rating: PropTypes.number
+}
 
 export default Rating;

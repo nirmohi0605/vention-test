@@ -3,6 +3,8 @@ import Rating from './Rating';
 import { connect } from 'react-redux';
 import { formatPrice } from '../helpers';
 import { addToCart, removeFromCart } from '../actions/cartActions';
+import PropTypes from 'prop-types';
+
 
 class Card extends Component {
   constructor(props) {
@@ -57,6 +59,11 @@ class Card extends Component {
     );
   }
 }
+
+Card.propTypes = {
+  product: PropTypes.object
+}
+
 
 
 export default connect(null, { addToCart, removeFromCart })(Card);

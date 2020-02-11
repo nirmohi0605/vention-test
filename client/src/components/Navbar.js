@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import Cart from "./Cart";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
+
 
 class Navbar extends Component {
   constructor(props) {
@@ -36,6 +38,12 @@ class Navbar extends Component {
     );
   }
 }
+
+Navbar.propTypes = {
+    addedItems: PropTypes.array,
+    total: PropTypes.number
+}
+
 
 const mapStateToProps = state => ({
   addedItems: state.cart.addedItems,

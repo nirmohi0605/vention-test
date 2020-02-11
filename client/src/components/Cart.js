@@ -2,6 +2,8 @@ import React from "react";
 import CartItem from "./CartItem";
 import { connect } from 'react-redux';
 import { formatPrice } from '../helpers';
+import PropTypes from 'prop-types';
+
 
 const Cart = (props) => {
   return (
@@ -20,6 +22,12 @@ const Cart = (props) => {
     </div>
   );
 };
+
+
+Cart.propTypes = {
+    addedItems: PropTypes.array,
+    total: PropTypes.number
+}
 
 const mapStateToProps = state => {
     return {

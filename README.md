@@ -15,7 +15,6 @@
 - Stack used - React/Redux, MongoDB, Node/ Express
 - MongoDB db has all the flowers already, images stored in Cloudinary
 - Cart can be stored onto localStorage
-- Add propTypes
 - Mongo keys out of gitignore
 - proxy setup
 - cleanup code
