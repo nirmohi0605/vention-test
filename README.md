@@ -9,7 +9,9 @@
 
 ### Notes 
 - Stack used - React/Redux, MongoDB, Node/ Express
-- Cart functionality present but needs a view
+- MongoDB db has all the flowers already, images stored in Cloudinary
 - Cart can be stored onto localStorage
-- Add propTypes?
+- Add propTypes
+- Mongo keys out of gitignore
 - proxy setup
+- cleanup code

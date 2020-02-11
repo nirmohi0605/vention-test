@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Rating from "./Rating";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import Rating from './Rating';
+import { connect } from 'react-redux';
 import { formatPrice } from '../helpers';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 
@@ -58,8 +58,5 @@ class Card extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-    addedItems: state.cart.addedItems,
-    total: state.cart.total  
-})
-export default connect(mapStateToProps, { addToCart, removeFromCart })(Card);
+
+export default connect(null, { addToCart, removeFromCart })(Card);

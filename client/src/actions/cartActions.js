@@ -8,3 +8,4 @@ export const addToCart = item => async dispatch => {
 export const removeFromCart = item => async dispatch => {
   dispatch({ type: REMOVE_FROM_CART, payload: item });
 };
+

@@ -1,13 +1,45 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Cart from "./Cart";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: true
+    };
+  }
+
+  toggleCartView = () => {
+    this.setState(prevState => ({
+      hidden: !prevState.hidden
+    }));
+  };
+
+  render() {
     return (
-        <div>
-            <button><Link to='/cart'>Cart</Link></button>
+      <div>
+        <div className="navbar">
+
+         <p> <FontAwesomeIcon className="icon" onClick={ this.toggleCartView }  icon={ faShoppingCart } size="2x"/></p>   
         </div>
-    )
-};
+        <div>
+          {this.state.hidden ? null : (
+            <div>
+            <Cart addedItems={this.props.addedItems}/>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+}
 
+const mapStateToProps = state => ({
+  addedItems: state.cart.addedItems,
+  total: state.cart.total
+});
 
-export default Navbar;
+export default connect(mapStateToProps)(Navbar);

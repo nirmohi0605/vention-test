@@ -1,0 +1,13 @@
+@import "./variables";
+
+.navbar {
+  height: 50px;
+  display: grid;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 40px;
+  .icon {
+    cursor: pointer;
+    color: $button-background;
+  }
+}
