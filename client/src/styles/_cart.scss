@@ -1,3 +1,5 @@
+@import './variables';
+
 .cart-dropdown {
   display: flex;
   flex-direction: column;
@@ -23,7 +25,7 @@
       align-items: center;
       font-size: 14px;
       font-weight: 450;
-      color: #696868;
+      color: $bold-text-color;
   
       img {
         height: 30px;
@@ -37,7 +39,7 @@
   .empty-message, .total {
     font-size: 14px;
     font-weight: 450;
-    color: #696868;
+    color: $bold-text-color;
   }
 
   .empty-message {
@@ -51,6 +53,10 @@
 
   .totalText {
       font-weight: 600;
+  }
+
+  .totalAmount, .itemPrice {
+    color: #868585;
   }
   
 }

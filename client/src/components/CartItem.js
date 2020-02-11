@@ -8,7 +8,7 @@ const CartItem = (props) => {
         <div className="cart-item">
         <img src={props.item.imageURL} alt=""/>
             <span>{props.item.name}</span>
-            <span>{formatPrice(props.item.price)}</span>      
+            <span className="itemPrice">{formatPrice(props.item.price)}</span>      
         </div>
     )
 }

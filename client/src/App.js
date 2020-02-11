@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
 import Home from "./components/Home";
-import Cart from './components/Cart';
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
