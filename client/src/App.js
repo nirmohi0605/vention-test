@@ -11,7 +11,6 @@ function App() {
       <div className="App">
         <Navbar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/cart" component={Cart} />
       </div>
     </BrowserRouter>
   );

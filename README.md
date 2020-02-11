@@ -1,8 +1,7 @@
 ## Nirmohi's Vention Test 
 
 
-[![Watch the demo](https://img.youtube.com/vi/lguEtoM7bgE/maxresdefault.jpg)](https://youtu.be/lguEtoM7bgE)
-
+[Watch Video Demo](https://youtu.be/UJzgwfHnyNg "Demo")
 
 ### Running the App 
 - `git clone https://github.com/nirmohi0605/vention-test.git`

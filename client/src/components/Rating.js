@@ -7,11 +7,11 @@ const Rating = (props) => {
     const ratingValue = `rating${props.rating}`;
     return (
         <div className={ratingValue}>
-            <img src="./star.svg" alt=""/>
-            <img src="./star.svg" alt=""/>
-            <img src="./star.svg" alt=""/>
-            <img src="./star.svg" alt=""/>
-            <img src="./star.svg" alt=""/>
+            <img src="./star.svg" alt="star"/>
+            <img src="./star.svg" alt="star"/>
+            <img src="./star.svg" alt="star"/>
+            <img src="./star.svg" alt="star"/>
+            <img src="./star.svg" alt="star"/>
         </div>
     )
 }

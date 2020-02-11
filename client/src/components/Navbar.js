@@ -24,7 +24,6 @@ class Navbar extends Component {
     return (
       <div>
         <div className="navbar">
-
          <p> <FontAwesomeIcon className="icon" onClick={ this.toggleCartView }  icon={ faShoppingCart } size="2x"/></p>   
         </div>
         <div>
