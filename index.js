@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// const Flower = require('./models/Flower');
 
 const flowers = require('./routes/api/flowers');
 
@@ -25,117 +24,7 @@ mongoose
   .catch(err => console.log(err));
 
 
-app.get('/', (req, res) => {
-    res.send('Hi I am a server and I have been setup')
-})
-
 app.use("/api", flowers);
-
-// const blueFlower = new Flower({ name: 'Blue Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047071/Vention/blue-flower_ibrc8n.png',
-// price: 8000,
-// rating: 4 });
-
-// // Save the new model instance, passing a callback
-// blueFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const pinkFlower = new Flower({ name: 'Pink Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047062/Vention/pink-flower_tdevsf.png',
-// price: 4000,
-// rating: 5 });
-
-// // Save the new model instance, passing a callback
-// pinkFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const orangeFlower = new Flower({ name: 'Orange Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581047065/Vention/orange-flower_g3ahxd.png',
-// price: 1760,
-// rating: 3 });
-
-// // Save the new model instance, passing a callback
-// orangeFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-// const violetFlower = new Flower({ name: 'Violet Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365937/Vention/Vention_Vention_purple-flower_ouuawb-e_bgremoval_hnaase-c_scale_h_500_w_500_bzg70x.jpg',
-// price: 2090,
-// rating: 2 });
-
-// Save the new model instance, passing a callback
-// violetFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const redFlower = new Flower({ name: 'Red Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365669/Vention/Vention_Vention_red-flower_arevam-e_make_transparent_10_jhgdmx-c_scale_h_500_w_500_bxpc0q.jpg',
-// price: 9800,
-// rating: 1 });
-
-// // Save the new model instance, passing a callback
-// redFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const yellowFlower = new Flower({ name: 'Yellow Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365570/Vention/Vention_yellow-flower2_svxyu4-c_scale_e_make_transparent_10_h_500_w_500_qhsvvh.jpg',
-// price: 9000,
-// rating: 5 });
-
-// // Save the new model instance, passing a callback
-// yellowFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-
-// const whiteFlower = new Flower({ name: 'White Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365791/Vention/Vention_Vention_white_flower_nenga5-e_bgremoval_bxoygk-c_scale_h_500_w_500_bqwpmo.jpg',
-// price: 2350,
-// rating: 2 });
-
-// // Save the new model instance, passing a callback
-// whiteFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const peachFlower = new Flower({ name: 'Peach Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581365207/Vention/Vention_peach-flower_sgcqwj-c_scale_e_make_transparent_10_h_500_w_500_eof0nz.jpg',
-// price: 8050,
-// rating: 5 });
-
-// // Save the new model instance, passing a callback
-// peachFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-// const taffyFlower = new Flower({ name: 'Taffy Flower', 
-// imageURL: 'https://res.cloudinary.com/dmqiiomnm/image/upload/v1581364697/Vention/Vention_Vention_taffy-flower_zxcwsu-e_make_transparent_10_wkr0yb-c_scale_h_500_w_500_vgxgz2.jpg',
-// price: 7050,
-// rating: 5 });
-
-// // Save the new model instance, passing a callback
-// taffyFlower.save(function (err, flower) {
-//   if (err) return handleError(err);
-//   console.log(`${flower.name} saved to collection`);
-// });
-
-
-
-
-
-
-
 
 
 const port = process.env.PORT || 5000;
